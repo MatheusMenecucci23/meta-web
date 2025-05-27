@@ -3,48 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MetaAMorfose - A Festa</title>
+  <title>MetaAMorfose - Spetaculum</title>
+
+  <!-- Fonte Rye -->
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #1a1a1a, #4a148c);
+ background: repeating-linear-gradient(
+        45deg,
+        #ffcc00,
+        #ffcc00 20px,
+        #d32f2f 20px,
+        #d32f2f 40px
+      );
       color: #fff;
       text-align: center;
     }
 
     header {
-      padding: 60px 20px 30px;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 50px 20px 30px;
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+      font-family: 'Rye', cursive;
+      font-size: 4em;
+      color: #ffeb3b;
+      margin: 0;
+      text-shadow: 3px 3px #000;
     }
 
     p.date {
-      font-size: 1.5em;
-      margin-bottom: 40px;
-      color: #ffd54f;
+      font-size: 1.6em;
+      margin-top: 10px;
+      color: #fff59d;
     }
 
     section {
+      padding: 40px 20px;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 30px auto;
       padding: 20px;
-    }
-
-    .highlight {
-      background-color: #880e4f;
-      padding: 15px;
-      margin: 20px auto;
+      border: 5px solid gold;
       width: 80%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #000;
     }
 
-    .highlight h2 {
-      margin-top: 0;
-      font-size: 1.8em;
+    .box h2 {
+      font-family: 'Rye', cursive;
+      color: #ffca28;
+      font-size: 2em;
+      margin-bottom: 15px;
     }
 
     ul {
@@ -58,52 +74,53 @@
     }
 
     .btn-comprar {
-      margin: 30px auto 50px;
-      padding: 15px 30px;
-      font-size: 1.3em;
-      background-color: #ff4081;
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 1.4em;
+      background: linear-gradient(to right, #f44336, #e91e63);
       color: white;
       border: none;
-      border-radius: 10px;
-      cursor: pointer;
+      border-radius: 50px;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
       box-shadow: 0 0 10px #000;
-      transition: background 0.3s;
+      transition: transform 0.2s, background 0.3s;
     }
 
     .btn-comprar:hover {
-      background-color: #f50057;
+      background: linear-gradient(to right, #e53935, #c2185b);
+      transform: scale(1.05);
     }
 
     footer {
+      background: rgba(0,0,0,0.7);
       padding: 20px;
       font-size: 0.9em;
-      background: rgba(0,0,0,0.4);
+      color: #eee;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>METAAMORFOSE - SPETACULUM</h1>
-    <p class="date">27 de Junho • 23h59 às 10h • Oasis Eventos</p>
+    <h1>METAAMORFOSE</h1>
+    <p class="date">🎪 SPETACULUM • 27 de Junho • 23h59 às 10h • Oasis Eventos</p>
   </header>
 
   <section>
-    <div class="highlight">
-      <h2>Open Bar</h2>
+    <div class="box">
+      <h2>🍹 Open Bar</h2>
       <ul>
-        <li>Vodka</li>
-        <li>Energético</li>
+        <li>Vodka & Energético</li>
         <li>Cerveja</li>
         <li>Refrigerante</li>
         <li>Água</li>
       </ul>
     </div>
 
-    <div class="highlight">
-      <h2>Open Doces</h2>
+    <div class="box">
+      <h2>🍭 Open Doces</h2>
       <ul>
         <li>Algodão doce</li>
         <li>Brigadeiro</li>
@@ -111,12 +128,12 @@
       </ul>
     </div>
 
-    <div class="highlight">
-      <h2>Atrações</h2>
+    <div class="box">
+      <h2>🎤 Atrações</h2>
       <ul>
         <li>DJ Xablau</li>
         <li>Banda Surreal</li>
-        <li>Performance circense</li>
+        <li>Performances circenses</li>
         <li>After secreto</li>
       </ul>
     </div>
