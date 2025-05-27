@@ -12,11 +12,20 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-
+      position: relative;
       color: #fff;
       text-align: center;
     }
-
+    .overlay::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* ajuste a opacidade aqui */
+      z-index: -1;
+    }
     header {
       background-color: rgba(0, 0, 0, 0.8);
       padding: 50px 20px 30px;
@@ -24,10 +33,12 @@
 
     h1 {
       font-family: 'Rye', cursive;
-      font-size: 4em;
       color: #ffeb3b;
+      font-size: 4em;
       margin: 0;
       text-shadow: 3px 3px #000;
+        white-space: nowrap;         /* Impede quebra */
+  overflow-wrap: normal;       /* Mantém tudo em uma linha */
     }
 
     p.date {
@@ -35,9 +46,17 @@
       margin-top: 10px;
       color: #fff59d;
     }
-
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  p.date{
+          font-size: 1em;
+  }
+}
     section {
       padding: 40px 20px;
+
     }
 
     .box {
@@ -132,7 +151,7 @@
       </ul>
     </div>
 
-    <a href="https://seulinkdeingresso.com" class="btn-comprar" target="_blank">🎟️ Comprar Ingresso</a>
+    <a href="https://blacktag.com.br/eventos/26230/metaamorfose-spectaculum?utm_source=share&amp;utm_medium=cpc&amp;utm_campaign=share" class="btn-comprar" target="_blank">🎟️ Comprar Ingresso</a>
   </section>
 
   <footer>
